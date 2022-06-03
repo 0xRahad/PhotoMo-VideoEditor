@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">PhotoMo</string>
+    <string name="images_folder">Photo Motion</string>
+    <string name="NO">No</string>
+    <string name="Photo">Gallery</string>
+    <string name="YES">Yes</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="alert">Exit</string>
+
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="camera">Camera</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="dir">directory.</string>
+    <string name="exit">Exit</string>
+    <string name="gallery">Gallery</string>
+    <string name="load_image_fail">Error loading image!</string>
+    <string name="message">Are you sure want to leave this page?</string>
+    <string name="my_album">My Album</string>
+    <string name="oops">Oops! Failed to create.</string>
+    <string name="preference_file_key">com.codeshare.photomotion.PREFERENCES_KEY</string>
+    <string name="project_folder">Photo Motion</string>
+    <string name="project_name">Photo Motion</string>
+
+    <string name="txt_speed">SPEED</string>
+    <string name="txt_resolution">RESOLUTION</string>
+    <string name="share">Share</string>
+
+    <string name="txt_redo">Redo</string>
+    <string name="txt_undo">Undo</string>
+
+    <string name="txt_select_an_image">Select an image</string>
+    <string name="txt_erase">ERASE</string>
+    <string name="txt_details">Details</string>
+    <string name="txt_stabilize">STABILIZE</string>
+
+    <string name="txt_mask">MASK</string>
+    <string name="txt_motion">MOTION</string>
+
+    <string name="tools_text_save">Save/Export Video</string>
+    <string name="tools_text_select_remove">SELECT</string>
+    <string name="txt_sequence">SEQUENCE</string>
+    <string name="txt_zoom">Zoom</string>
+    <string name="txt_slow">SLOW</string>
+    <string name="txt_fast">FAST</string>
+    <string name="videos_folder">PhotoMotion</string>
+
+    <string name="phone_camera_permission_not_granted">Phone Camera permision not granted</string>
+    <string name="storage_permission_not_granted">Storage permission not granted</string>
+    <string name="txt_my_creation">My Creation</string>
+
+    <string name="txt_share">Share</string>
+    <string name="txt_rate_us">Rate Us</string>
+    <string name="set_as_wallpaper">Set as Live wallpaper</string>
+    <string name="set_live_wall_target_title"></string>
+    <string name="set_live_wall_target_msg">Click here to set your creation as your mobile screen Photo Motion</string>
+
+    <!--Test-->
+    <string name="ad_mob_native_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="ad_mob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_mob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_mob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ad_mob_app_open_id">ca-app-pub-3940256099942544/3419835294</string>
+
+    <!--Live-->
+    <string name="ad_mob_native_id_live">ca-app-pub-2510678988686456/7513316831</string>
+    <string name="ad_mob_banner_id_live">ca-app-pub-2510678988686456/4467554931</string>
+    <string name="ad_mob_interstitial_id_live">ca-app-pub-2510678988686456/1197559612</string>
+    <string name="ad_mob_app_id_live">ca-app-pub-2510678988686456~6234263873</string>
+    <string name="ad_mob_app_open_id_live">ca-app-pub-2510678988686456/7061094532</string>
+    <string name="app_folder3">Temp</string>
+    <string name="txt_camera">Camera</string>
+    <string name="txt_gallery">Gallery</string>
+
+</resources>

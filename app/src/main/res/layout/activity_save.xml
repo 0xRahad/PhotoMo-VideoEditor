@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rel_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lin_ads"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_16"
+            android:paddingBottom="@dimen/margin_16">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/ic_video_creator"
+                app:lottie_repeatMode="restart" />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvSubMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/app_name"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp14"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_270"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:elevation="@dimen/margin_5"
+                app:cardBackgroundColor="@color/black20"
+                app:cardCornerRadius="@dimen/margin_0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txVelocidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:text="@string/txt_speed"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/seekTempoSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_16"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingBottom="@dimen/margin_8"
+                        android:progress="0"
+                        android:theme="@style/MySeekBarThemeSave2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txTempoLento"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Slow"
+                            android:textColor="@color/color_dialog_hint_text"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/color_dialog_hint_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="Fast"
+                            android:textColor="@color/color_dialog_hint_text"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin_12"
+                        android:background="@color/black"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_5">
+
+                        <TextView
+                            android:id="@+id/txTempoSave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/margin_10"
+                            android:paddingRight="@dimen/margin_10"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/margin_5"
+                            android:paddingRight="@dimen/margin_10"
+                            android:text="/ Sec"
+                            android:textAlignment="center"
+                            android:textColor="@color/color_dialog_hint_text"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:elevation="@dimen/margin_5"
+                app:cardBackgroundColor="@color/black20"
+                app:cardCornerRadius="@dimen/margin_0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txResolucao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:text="@string/txt_resolution"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/seekResolucaoSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="10000"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:paddingTop="@dimen/margin_16"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingBottom="@dimen/margin_8"
+                        android:progress="0"
+                        android:theme="@style/MySeekBarThemeSave2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/color_dialog_hint_text"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txTamanhoIdeal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="Ideal"
+                            android:textColor="@color/color_dialog_hint_text"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_12"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txResolucaoSave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@color/black"
+                            android:paddingLeft="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_2"
+                            android:paddingRight="@dimen/margin_10"
+                            android:paddingBottom="@dimen/margin_5"
+                            android:text="1280"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_10">
+
+                <Button
+                    android:id="@+id/btSalvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/margin_8"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="Save"
+                    android:textColor="@color/colorIconButtonsSelected"
+                    android:textSize="@dimen/_14ssp" />
+
+                <Button
+                    android:id="@+id/btClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/margin_8"
+                    android:layout_weight="1"
+                    android:background="@color/black20"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

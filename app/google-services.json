@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111098533587",
+    "project_id": "photomo-718f1",
+    "storage_bucket": "photomo-718f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111098533587:android:70320af2bb24706d8c6626",
+        "android_client_info": {
+          "package_name": "com.devsectech.photomo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111098533587-mi38dv1ddq9eqh70cpgbdkg2utob1q7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHELboTH6SaPnKQrbsDsx9VPzTxs7A4XQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111098533587-mi38dv1ddq9eqh70cpgbdkg2utob1q7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

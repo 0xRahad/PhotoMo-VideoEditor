@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:id="@+id/tv_title"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <TextView
+            android:textSize="@dimen/_16ssp"
+            android:textColor="#000000"
+            android:id="@+id/tv_msg"
+            android:padding="@dimen/_20ssp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you want to leave this page?" />
+
+        <View
+            android:visibility="visible"
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/_14ssp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:id="@+id/tv_no"
+                android:padding="@dimen/_10ssp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_weight="1" />
+
+            <View
+                android:background="#e0e0e0"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:id="@+id/tv_yes"
+                android:padding="@dimen/_10ssp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

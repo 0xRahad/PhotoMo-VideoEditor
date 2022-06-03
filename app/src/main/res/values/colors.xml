@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="black_33">#3E000000</color>
+    <color name="colorAccent">#8D4CEF</color>
+    <color name="colorAzulPadrao">#ff55a5da</color>
+    <color name="colorAzulPadraoClaro">#ff55c8da</color>
+    <color name="colorIconButtons">#ffa9abae</color>
+    <color name="colorIconButtonsSelected">#ffffffff</color>
+    <color name="colorMenuDisabled">#88ffffff</color>
+    <color name="colorPlanoDeFundo">#ffffffff</color>
+    <color name="colorPlanoDeFundoTransparente">#aaeeeeee</color>
+    <color name="colorPrimary">#8D4CEF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimary_trans">#bf8D4CEF</color>
+    <color name="colorTextButtons">#ff727376</color>
+    <color name="corTextoCinza">#ff888888</color>
+    <color name="divider">#333333</color>
+    <color name="dialog_card_back">#EBEBEB</color>
+    <color name="color_dialog_hint_text">#AFAFAF</color>
+    <color name="intro_bg">#35ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="seekBarControlNormal">#ffcccccc</color>
+    <color name="textColorPrimary">#fffffb</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="windowBackground">#1c1c1c</color>
+    <color name="overlay">#cc000000</color>
+    <color name="overlayWhite">#FFFFFF</color>
+    <color name="gray">#bfbcbc</color>
+    <color name="bg_color">#1c6c00</color>
+    <color name="black20">#202020</color>
+    <color name="colorToolsUnSelected">#FFFFFF</color>
+</resources>

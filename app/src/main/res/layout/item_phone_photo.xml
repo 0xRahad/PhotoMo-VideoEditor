@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devsectech.photomo.customView.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/square_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_album"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                app:riv_corner_radius="@dimen/_2sdp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:indeterminateDrawable="@drawable/progress2"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                style="?android:attr/progressBarStyleLarge" />
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:id="@+id/tv_album_name"
+            android:background="@drawable/shape_textbg"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:adjustViewBounds="true"
+            android:text="@string/app_name"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.devsectech.photomo.customView.SquareLayout>

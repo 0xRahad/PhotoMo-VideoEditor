@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:background="@drawable/app_btn_oval"
+                android:id="@+id/iv_close_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="@dimen/margin_5"
+                android:src="@drawable/ic_cancel"
+                app:layout_constraintBottom_toTopOf="@+id/lottie_animation"
+                app:layout_constraintEnd_toStartOf="@+id/lottie_animation"
+                app:layout_constraintStart_toStartOf="@+id/lottie_animation"
+                app:layout_constraintTop_toTopOf="@+id/lottie_animation" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_animation"
+                android:background="@drawable/bg_animation_layout"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_12sdp"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
